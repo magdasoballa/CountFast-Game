@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    font-family: 'Fredericka the Great', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+    font-size: 1.5rem;
+    height: 40px;
+    width: 160px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Fredericka the Great', sans-serif;
+    color: white;
+    background-color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.timer {
+    font-family: 'Fredericka the Great', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+
 }
 
-.App-link {
-  color: #61dafb;
+.time {
+    background-color: black;
+    color: white;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.game {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.target {
+    border: thin solid #999;
+    width: 40%;
+    height: 75px;
+    font-size: 45px;
+    text-align: center;
+    display: inline-block;
+    background-color: #ccc;
+    margin-top: 20px
+}
+
+.challenge-numbers {
+    width: 85%;
+    margin: 1rem auto
+}
+
+.number {
+    border: thin solid lightgray;
+    background-color: #eee;
+    width: 40%;
+    text-align: center;
+    font-size: 36px;
+    border-radius: 5px;
+    margin: 1rem 5%;
+    display: inline-block;
 }
